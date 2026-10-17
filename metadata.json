@@ -1,0 +1,6 @@
+{
+  "name": "DUSUR (دُسُر) Mobile Portfolio",
+  "description": "Production-ready mobile application and digital portfolio presentation platform for DUSUR (دُسُر) architectural design studio.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

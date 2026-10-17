@@ -1,0 +1,303 @@
+import { CategoryItem, Project } from '../types';
+
+export const CATEGORIES: CategoryItem[] = [
+  {
+    id: 'villas',
+    slug: 'villas',
+    nameAr: 'فيلات ومنازل فاخرة',
+    nameEn: 'Villas & Residences',
+    iconName: 'Home',
+    coverImage: '/src/assets/images/hero_mediterranean_villa_1792269965957.jpg',
+    count: 3,
+  },
+  {
+    id: 'compounds',
+    slug: 'compounds',
+    nameAr: 'مجمعات سكنية حديثة',
+    nameEn: 'Modern Compounds',
+    iconName: 'Building2',
+    coverImage: '/src/assets/images/project_modern_compound_1792269966818.jpg',
+    count: 2,
+  },
+  {
+    id: 'commercial',
+    slug: 'commercial',
+    nameAr: 'مراكز تجارية ومولات',
+    nameEn: 'Malls & Commercial',
+    iconName: 'ShoppingBag',
+    coverImage: '/src/assets/images/project_commercial_mall_1792269967634.jpg',
+    count: 2,
+  },
+  {
+    id: 'hospitality',
+    slug: 'hospitality',
+    nameAr: 'مقاهي وضيافة راقية',
+    nameEn: 'Cafes & Hospitality',
+    iconName: 'Coffee',
+    coverImage: '/src/assets/images/project_artisan_coffee_1792269968249.jpg',
+    count: 2,
+  },
+  {
+    id: 'fitness',
+    slug: 'fitness',
+    nameAr: 'نوادي صحية ورياضية',
+    nameEn: 'Fitness & Wellness',
+    iconName: 'Activity',
+    coverImage: '/src/assets/images/project_elite_fitness_1792269967227.jpg',
+    count: 1,
+  },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    id: 'project-mediterranean-villa',
+    titleAr: 'فيلا الساحل المتوسطي الفاخرة',
+    titleEn: 'Mediterranean Coastal Villa',
+    descriptionAr: 'تحفة معمارية ساحلية تحتضن إطلالات بانورامية على مياه البحر الصافية، مبنية من الحجر الرملي الطبيعي والخرسانة المعمارية البيضاء النقية مع حوض سباحة لامتناهٍ وواجهات زجاجية واسعة تدمج الطبيعة بالداخل.',
+    descriptionEn: 'A coastal architectural masterpiece framing panoramic Mediterranean azure waters, sculptured with warm natural sandstone, crisp white concrete cantilevers, an infinity reflection pool, and expansive thermal glass envelope.',
+    category: 'villas',
+    categoryAr: 'فيلات ومنازل فاخرة',
+    categoryEn: 'Villas & Residences',
+    thumbnail: '/src/assets/images/hero_mediterranean_villa_1792269965957.jpg',
+    images: [
+      '/src/assets/images/hero_mediterranean_villa_1792269965957.jpg',
+      '/src/assets/images/project_modern_compound_1792269966818.jpg',
+      '/src/assets/images/project_artisan_coffee_1792269968249.jpg',
+    ],
+    previewUrl: 'https://dusur.me/projects/mediterranean-coastal-villa',
+    downloadUrl: '/documents/dusur-mediterranean-villa-brief.pdf',
+    featured: true,
+    locationAr: 'الساحل الشمالي، عقارات الخليج الخاصة',
+    locationEn: 'Coastal Estate, Waterfront Enclave',
+    areaSqm: 450,
+    year: 2024,
+    clientAr: 'خاص - عائلة إماراتية رائدة',
+    clientEn: 'Private Family Commission',
+    scopeAr: 'تصميم معماري متكامل، هندسة إنشائية وتصميم داخلي فاخر',
+    scopeEn: 'Full Architectural Design, Structural Engineering & Interior Turnkey',
+    highlightsAr: [
+      'حوض سباحة لامتناهٍ مع تيراس خشبي عائم',
+      'كتل معمارية كابولية موفرة للظل الطبيعي',
+      'تكامل مع التضاريس الصخرية المحيطة بالحجر البيئي',
+      'أنظمة تحكم ذكية بالطاقة والإضاءة المناخية'
+    ],
+    highlightsEn: [
+      'Infinity pool with cantilevered teak sun terrace',
+      'Structural cantilevers engineered for natural microclimate shading',
+      'Seamless integration with organic coastal limestone terrain',
+      'Smart biometric environmental climate and architectural lighting control'
+    ],
+    blueprintTitleAr: 'المخطط العام والمسقط الأفقي للمستوى الأرضي والعلوي',
+    blueprintTitleEn: 'Ground & Upper Level Master Floor Plan'
+  },
+  {
+    id: 'project-modern-luxury-compound',
+    titleAr: 'مجمع دبي هيلز السكني الفاخر',
+    titleEn: 'Modern Luxury Compound',
+    descriptionAr: 'مجمع سكني راقٍ في قلب دبي هيلز يمتد على مساحة 2800 متر مربع، يضم أجنحة عائلية مستقلة متصلة بأروقة زجاجية وحدائق صحراوية ساحرة، مصمم بمعايير الاستدامة المتقدمة والتقنيات المنزلية الذكية.',
+    descriptionEn: 'An elite residential compound spanning 2,800 sqm in Dubai Hills, featuring private pavilion wings connected by floating glass galleries, landscaped desert oasis courtyards, and net-zero energy design systems.',
+    category: 'compounds',
+    categoryAr: 'مجمعات سكنية حديثة',
+    categoryEn: 'Modern Compounds',
+    thumbnail: '/src/assets/images/project_modern_compound_1792269966818.jpg',
+    images: [
+      '/src/assets/images/project_modern_compound_1792269966818.jpg',
+      '/src/assets/images/hero_mediterranean_villa_1792269965957.jpg',
+      '/src/assets/images/project_elite_fitness_1792269967227.jpg',
+    ],
+    previewUrl: 'https://dusur.me/projects/modern-luxury-compound',
+    downloadUrl: '/documents/dusur-luxury-compound-brief.pdf',
+    featured: true,
+    locationAr: 'دبي هيلز، الإمارات العربية المتحدة',
+    locationEn: 'Dubai Hills, United Arab Emirates',
+    areaSqm: 2800,
+    year: 2024,
+    clientAr: 'مجموعة استثمارية عقارية رائدة',
+    clientEn: 'Prestigious Real Estate Estate Investment Group',
+    scopeAr: 'المخطط العام، التصميم المعماري، وتنسيق الحدائق المستدامة',
+    scopeEn: 'Master Planning, Full Architecture & Sustainable Biophilic Landscaping',
+    highlightsAr: [
+      'مساحة شاسعة 2800 م² مع خصوصية كاملة للأجنحة',
+      'تصميم بيئي يقلل استهلاك الطاقة بنسبة 35%',
+      'أحواض مائية عاكسة وممرات بين الكتل المعمارية',
+      'واجهات من حجر الترافرتين الإيطالي الفاخر'
+    ],
+    highlightsEn: [
+      'Expansive 2,800 sqm footprint with optimal spatial acoustic privacy',
+      'Bioclimatic envelope reducing cooling energy by 35%',
+      'Reflecting water features and floating travertine walkways',
+      'Honed Italian travertine and low-iron architectural glazing'
+    ],
+    blueprintTitleAr: 'مخطط التوزيع العام للأجنحة والمساحات الخضراء',
+    blueprintTitleEn: 'Master Pavilion Circulation & Landscape Layout'
+  },
+  {
+    id: 'project-premium-shopping-mall',
+    titleAr: 'المركز التجاري والواحة المعمارية',
+    titleEn: 'Premium Shopping Mall & Civic Atrium',
+    descriptionAr: 'مشروع تجاري وثقافي فريد بمساحة 15,000 متر مربع في قلب العاصمة، يتميز بسقف زجاجي مهيب وشفرات خشبية عضوية متموجة، تمنح الزوار تجربة تسوق غامرة في فضاء مفتوح يفيض بالنور الطبيعي.',
+    descriptionEn: 'A flagship civic retail and lifestyle destination spanning 15,000 sqm in the city center, highlighted by an undulating parametric timber canopy, soaring skylight atrium, and world-class luxury retail promenades.',
+    category: 'commercial',
+    categoryAr: 'مراكز تجارية ومولات',
+    categoryEn: 'Malls & Commercial',
+    thumbnail: '/src/assets/images/project_commercial_mall_1792269967634.jpg',
+    images: [
+      '/src/assets/images/project_commercial_mall_1792269967634.jpg',
+      '/src/assets/images/project_artisan_coffee_1792269968249.jpg',
+      '/src/assets/images/hero_mediterranean_villa_1792269965957.jpg',
+    ],
+    previewUrl: 'https://dusur.me/projects/premium-shopping-mall',
+    downloadUrl: '/documents/dusur-premium-mall-brief.pdf',
+    featured: true,
+    locationAr: 'وسط المدينة، العاصمة',
+    locationEn: 'City Center Financial District',
+    areaSqm: 15000,
+    year: 2023,
+    clientAr: 'شركة التطوير التجاري الكبرى',
+    clientEn: 'Metropolitan Commercial Development Corp',
+    scopeAr: 'تصميم المركز التجاري، بهو الاستقبال المركزي، وهندسة الإضاءة',
+    scopeEn: 'Commercial Architecture, Grand Atrium Engineering & Lighting Design',
+    highlightsAr: [
+      'سقف بارامتري خشبي عضوي فريد من نوعه',
+      'بهو رئيسي بارتفاع 4 طوابق مغمور بالضوء الطبيعي',
+      'أكثر من 80 متجراً ومطعماً ومساحة تفاعلية',
+      'حاصل على شهادة LEED الذهبية للمباني الخضراء'
+    ],
+    highlightsEn: [
+      'Unique parametric undulating oak acoustic ceiling installation',
+      '4-story central atrium bathed in diffuse sunlit ambiance',
+      'Over 80 curated luxury flagships, dining, and social plazas',
+      'LEED Gold Certified for energy efficiency and sustainable airflow'
+    ],
+    blueprintTitleAr: 'مسقط التدفق والحركة للبهو والمحلات التجارية',
+    blueprintTitleEn: 'Atrium Pedestrian Flow & Retail Zoning Plan'
+  },
+  {
+    id: 'project-artisan-coffee-house',
+    titleAr: 'مقهى الحرفيين والمساحة الإبداعية',
+    titleEn: 'Artisan Coffee House',
+    descriptionAr: 'مساحة ضيافة معاصرة في حي الفنون تجمع بين دفء خشب البلوط الطبيعي وكتلة البار المتراصة من حجر الترافرتين المنحوت، تمنح رواد القهوة المختصة تجربة حسية وبصرية هادئة وسط إضاءة مخفية مدروسة.',
+    descriptionEn: 'A warm minimalist hospitality haven in the Arts Quarter blending brushed monolith limestone counters with fluted white oak walls, brass detailing, and calm indirect ambient illumination for specialty coffee connoisseurs.',
+    category: 'hospitality',
+    categoryAr: 'مقاهي وضيافة راقية',
+    categoryEn: 'Cafes & Hospitality',
+    thumbnail: '/src/assets/images/project_artisan_coffee_1792269968249.jpg',
+    images: [
+      '/src/assets/images/project_artisan_coffee_1792269968249.jpg',
+      '/src/assets/images/project_commercial_mall_1792269967634.jpg',
+    ],
+    previewUrl: 'https://dusur.me/projects/artisan-coffee-house',
+    downloadUrl: '/documents/dusur-coffee-house-brief.pdf',
+    featured: false,
+    locationAr: 'حي الفنون والتصميم، أبوظبي',
+    locationEn: 'Arts Quarter, Cultural District, Abu Dhabi',
+    areaSqm: 180,
+    year: 2024,
+    clientAr: 'علامة كافيهات متخصصة',
+    clientEn: 'Artisan Roastery & Brew Bar Brand',
+    scopeAr: 'التصميم الداخلي المتكامل، تصميم الأثاث المخصص، والإشراف الهندسي',
+    scopeEn: 'Complete Interior Architecture, Custom Furniture & Acoustic Engineering',
+    highlightsAr: [
+      'بار قهوة متجانس منحوت من قطعة حجر ترافرتين واحدة',
+      'كسوات جدارية خشبية معالجة صوتياً لعزل الضوضاء',
+      'إضاءة مخفية تعزز هدوء المكان وراحة الزوار',
+      'كفاءة تشغيلية ومسار مخصص للخدمة السريعة'
+    ],
+    highlightsEn: [
+      'Monolithic sculpted travertine service espresso bar',
+      'Acoustic-dampened fluted white oak wall paneling',
+      'Concealed architectural cove lighting creating serene ambiance',
+      'Ergonomic barista workflow engineered for high throughput'
+    ],
+    blueprintTitleAr: 'مخطط التوزيع الهندسي لمحطات التحضير وجلسات الضيوف',
+    blueprintTitleEn: 'Brew Bar Ergonomics & Seating Floor Plan'
+  },
+  {
+    id: 'project-elite-fitness-center',
+    titleAr: 'نادي النخبة الصحي والرياضي',
+    titleEn: 'Elite Wellness & Fitness Sanctuary',
+    descriptionAr: 'مركز تدريب وصحة استثنائي في المنطقة المالية، صُمم بمزيج جريء من الألواح المعدنية البرونزية والخرسانة المصقولة والإضاءة الخطية الحديثة، لخلق بيئة محفزة تجمع بين الرفاهية والتركيز الرياضي العالي.',
+    descriptionEn: 'An ultra-luxury wellness and strength sanctuary in the Financial District, enveloped in dark fluted bronze panels, exposed architectural concrete, and sculpted linear LEDs that craft an invigorating environment.',
+    category: 'fitness',
+    categoryAr: 'نوادي صحية ورياضية',
+    categoryEn: 'Fitness & Wellness',
+    thumbnail: '/src/assets/images/project_elite_fitness_1792269967227.jpg',
+    images: [
+      '/src/assets/images/project_elite_fitness_1792269967227.jpg',
+      '/src/assets/images/project_modern_compound_1792269966818.jpg',
+    ],
+    previewUrl: 'https://dusur.me/projects/elite-fitness-center',
+    downloadUrl: '/documents/dusur-elite-fitness-brief.pdf',
+    featured: false,
+    locationAr: 'المنطقة المالية، مركز التجارة العالمي',
+    locationEn: 'Financial District, Global Trade Hub',
+    areaSqm: 1200,
+    year: 2023,
+    clientAr: 'نادي النخبة الخاص',
+    clientEn: 'Vanguard Private Athletic Club',
+    scopeAr: 'الهندسة المعمارية الداخلية، التوزيع الميكانيكي، وعزل الصوت المتطور',
+    scopeEn: 'Interior Architecture, Advanced Acoustics & Vibration Dampening',
+    highlightsAr: [
+      'فواصل زجاجية وبرونزية مقوسة تفصل مناطق التدريب',
+      'أرضيات ممتصة للصدمات والاهتزازات معتمدة دولياً',
+      'إضاءة ديناميكية متزامنة مع أوقات اليوم لتنشيط الجسم',
+      'أجنحة ساونا وسبا واستشفاء مائي خاصة'
+    ],
+    highlightsEn: [
+      'Arched bronze glass partitions dividing functional zones',
+      'Certified multi-layer vibration dampening acoustic floors',
+      'Circadian rhythm dynamic LED lighting programming',
+      'Private recovery suites, sauna, and hydrotherapy amenities'
+    ],
+    blueprintTitleAr: 'مخطط توزيع مناطق الأجهزة، الغرف الحركية، ومنطقة الاستشفاء',
+    blueprintTitleEn: 'Strength & Hydrotherapy Spatial Zoning Map'
+  },
+  {
+    id: 'project-contemporary-family-villa',
+    titleAr: 'فيلا العائلة المعاصرة في التلال',
+    titleEn: 'Contemporary Family Villa',
+    descriptionAr: 'فيلا سكنية حديثة بمساحة 380 متراً مربعاً على سفوح التلال الخضراء، تتميز بتصميم الفناء الداخلي المفتوح الذي يسمح بتدفق الهواء والضوء، مع مساحات معيشة رحبة متصلة بحديقة خاصة ومسبح عائلي.',
+    descriptionEn: 'A 380 sqm contemporary family sanctuary nestled in residential hills, characterized by an open courtyard atrium, continuous indoor-outdoor living boundaries, private infinity pool, and lush subtropical gardens.',
+    category: 'villas',
+    categoryAr: 'فيلات ومنازل فاخرة',
+    categoryEn: 'Villas & Residences',
+    thumbnail: '/src/assets/images/hero_mediterranean_villa_1792269965957.jpg',
+    images: [
+      '/src/assets/images/hero_mediterranean_villa_1792269965957.jpg',
+      '/src/assets/images/project_modern_compound_1792269966818.jpg',
+    ],
+    previewUrl: 'https://dusur.me/projects/contemporary-family-villa',
+    downloadUrl: '/documents/dusur-family-villa-brief.pdf',
+    featured: false,
+    locationAr: 'تلال دبي السكنية، دبي',
+    locationEn: 'Residential Hills, Dubai',
+    areaSqm: 380,
+    year: 2022,
+    clientAr: 'عائلة استثمارية خاصة',
+    clientEn: 'Private Family Residence',
+    scopeAr: 'تصميم معماري، استشارات تراخيص وتصميم داخلي',
+    scopeEn: 'Architectural Design, Permitting & Luxury Interior Decor',
+    highlightsAr: [
+      'فناء داخلي مفتوح بنباتات استوائية',
+      'أبواب زجاجية منزلقة بعرض 6 أمتار بدون عتبات',
+      'جناح رئيسي مستقل مع شرفة خاصة تطل على التلال',
+      'عزل حراري ذكي يخفف درجات الحرارة صيفاً'
+    ],
+    highlightsEn: [
+      'Central open courtyard with lush native flora',
+      '6-meter frameless sliding glazed walls merging indoor and outdoor',
+      'Private master penthouse suite with panoramic hill vistas',
+      'High-performance thermal envelope for passive desert cooling'
+    ],
+    blueprintTitleAr: 'المخطط الهندسي للمعيشة وتوزيع غرف النوم',
+    blueprintTitleEn: 'Courtyard Living & Bedroom Zoning Blueprint'
+  }
+];
+
+export const PORTFOLIO_STATS = {
+  totalProjects: 200, // over 200 completed projects as on website
+  totalAreaSqm: 185000,
+  featuredCount: 3,
+  yearsOfExperience: 15,
+  awardsCount: 50,
+};

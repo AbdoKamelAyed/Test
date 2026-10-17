@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-ar: 'Cairo', 'Segoe UI Arabic', 'Noto Sans Arabic', Tahoma, sans-serif;
+    --font-en: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --sat: env(safe-area-inset-top, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+    --sal: env(safe-area-inset-left, 0px);
+    --sar: env(safe-area-inset-right, 0px);
+  }
+
+  html[dir="rtl"], [dir="rtl"] {
+    font-family: var(--font-ar);
+  }
+
+  html[dir="ltr"], [dir="ltr"] {
+    font-family: var(--font-en), var(--font-ar);
+  }
+
+  /* Prevent rubber-banding on body */
+  body {
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom subtle scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe area padding utilities */
+.pt-safe {
+  padding-top: max(env(safe-area-inset-top), 12px);
+}
+.pb-safe {
+  padding-bottom: max(env(safe-area-inset-bottom), 16px);
+}
+
